@@ -1,0 +1,56 @@
+\begin{tabular}{lrlr}
+\toprule
+      Word &  z-score &       Word &  z-score \\
+\midrule
+       lap &    49.64 &      short &   -30.58 \\
+       she &    44.56 &       pick &   -27.48 \\
+     still &    39.16 &       ways &   -26.26 \\
+     didnt &    39.10 &        via &   -25.67 \\
+    better &    38.46 & themselves &   -25.61 \\
+       see &    36.29 &     system &   -25.52 \\
+      work &    35.70 &       wife &   -25.43 \\
+  excision &    35.70 &     become &   -25.34 \\
+      find &    35.42 &      wanna &   -25.28 \\
+        we &    35.31 &    welcome &   -24.64 \\
+     since &    34.66 &       head &   -24.37 \\
+  symptoms &    34.49 &     entire &   -24.04 \\
+     might &    34.48 & diagnostic &   -23.94 \\
+    people &    34.41 &   diarrhea &   -23.80 \\
+      sure &    34.34 &   caffeine &   -23.72 \\
+     right &    34.21 & thankfully &   -23.66 \\
+      need &    33.70 &       date &   -23.49 \\
+       lot &    33.53 &    whether &   -23.37 \\
+       got &    33.28 &    besides &   -23.33 \\
+     youre &    33.09 &     seemed &   -23.19 \\
+      make &    32.69 &      round &   -23.19 \\
+    things &    32.50 &  beginning &   -23.17 \\
+      said &    32.19 &     gotten &   -22.67 \\
+specialist &    31.87 &    therapy &   -22.39 \\
+      cant &    31.55 &       laps &   -22.23 \\
+       bad &    31.27 &    stopped &   -22.18 \\
+    months &    31.08 &      flare &   -22.11 \\
+   feeling &    30.41 & officially &   -21.75 \\
+       try &    30.01 &    sitting &   -21.55 \\
+      long &    29.99 &      heres &   -21.46 \\
+      able &    29.94 &   frequent &   -20.87 \\
+    thanks &    29.80 &      needs &   -20.84 \\
+     sorry &    29.68 &     toilet &   -20.53 \\
+     found &    29.45 &     theyve &   -20.44 \\
+        id &    29.01 &        soy &   -20.35 \\
+       way &    28.19 &      truly &   -20.32 \\
+      want &    27.91 &   surgeons &   -19.97 \\
+     their &    27.62 &    morning &   -19.92 \\
+      isnt &    27.51 &      spend &   -19.82 \\
+ something &    27.14 &       weed &   -19.78 \\
+    around &    26.49 &  irregular &   -19.76 \\
+      keep &    26.28 &        tho &   -19.53 \\
+       say &    25.77 &     lately &   -19.50 \\
+    normal &    25.49 & personally &   -19.21 \\
+     great &    25.44 &         gi &   -19.17 \\
+      days &    25.34 &   pictures &   -19.04 \\
+  probably &    25.29 &        yet &   -18.65 \\
+definitely &    25.21 &     bodies &   -18.52 \\
+       ill &    25.00 &     saying &   -18.33 \\
+      told &    24.58 &    biggest &   -18.25 \\
+\bottomrule
+\end{tabular}

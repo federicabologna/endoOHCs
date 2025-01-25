@@ -1,0 +1,78 @@
+
+Topics in LDA model: 25 topics 10 removed top words
+
+Topic 0 gastrointestinal symptoms
+take nausea bowel stomach help water constipation taking drink helps gas eat issues stool make ibs tea lot iron day meds ginger sure try helped
+
+Topic 1 lap prep and post-op
+lap excision weeks first back still time two months post one surgeon ago recovery week removed last hysterectomy much years done ablation better took second
+
+Topic 2 diagnosis/medical information on endo
+cyst ovary uterus endometriosis cysts removed tissue ovaries ultrasound found left bowel remove adhesions endometrioma stage right one ovarian lesions could surgeon said lap cause
+
+Topic 3 pelvic floor
+pelvic floor therapy physical help sex helped therapist muscles lot issues chronic dysfunction could things anxiety mental health cause may work exercises helps well painful
+
+Topic 4 getting diagnosed/unknown symptoms
+symptoms blood could ultrasound bladder test issues tests doctor endometriosis normal cause see something infection said back diagnosed think anything mri sure done show pcos
+
+Topic 5 period
+period periods days bleeding symptoms painful heavy cramps started normal day month time years since first bad every cycle always months last blood still worse
+
+Topic 6 online resources
+nook endometriosis https nancy group //www research facebook list doctors read excision people information find info post women good found lot great many check one
+
+Topic 7 dismissal/abuse
+people even doctors think feel something say one want women never tell doctor way thing many bad wrong told going much body life sorry said
+
+Topic 8 post-op recovery
+day days first home time around back gas hours week take much felt got took walk hospital work went weeks bed recovery feel could still
+
+Topic 9 obgyn and endo specialists
+doctor specialist find see excision doctors one endometriosis good need symptoms second opinion surgeon help best want lap treatment may diagnosis even think another definitely
+
+Topic 10 giving thanks/empathizing
+hope thank good much sorry better feel luck well find soon glad thanks relief best hear going definitely sounds feeling wish answers help sharing hopefully
+
+Topic 11 medical story
+years told doctor said got went diagnosed back lap finally first year endometriosis ago found last months since one symptoms ultrasound gyno time see appointment
+
+Topic 12 fertility
+pregnant want kids years hysterectomy fertility pregnancy trying one children baby even life ivf still year time never getting told got since child able conceive
+
+Topic 13 insurance
+insurance medical health hospital work care pay need doctor live one see doctors money time private even cover job able cost state could system people
+
+Topic 14 pain management/work/study
+work take cbd time day job days help use much meds even helps need high school try taking home able make thc working bad tried
+
+Topic 15 recommendations
+heating pad use hot heat one water help helps pads make tens try good take using back ice put bed keep bottle things bath work
+
+Topic 16 emotional support
+feel people life want help much need support sorry hard understand time things going someone love think one way alone make thank lot even good
+
+Topic 17 muscular pain
+back sex right feel feels lower side sometimes left painful area leg nerve abdomen pains around hurt hurts hip feeling sharp legs pelvic vagina even
+
+Topic 18 hormonal treatment
+control months birth iud pill period years mirena periods got bleeding since symptoms back year started first month still pills time taking stopped worse ago
+
+Topic 19 diet
+diet eat gluten food foods dairy eating try free lot helped help sugar things inflammatory much cut meat inflammation low make body helps good exercise
+
+Topic 20 getting medical assistance
+doctor going ask see thank anyone appointment sure want think something anything make help thanks next time else could need much try call might questions
+
+Topic 21 sharing symptoms
+feel period day days bad time every worse back last feeling even cramps week night much flare felt going sometimes month right started still getting
+
+Topic 22 clothing/comfort items
+wear pants belly look weight one size wearing super cup much even feel underwear loose clothes use high jeans hair big lol bloated work fit
+
+Topic 23 medication
+take side taking effects weight months pill medication dose NUMmg help ibuprofen meds day doctor mood depression orilissa lupron bad time tried prescribed pills one
+
+Topic 24 medical information on horomonal treatments
+control birth symptoms treatment side estrogen effects hormones lupron hormonal help endometriosis different hormone may people body pill progesterone take menopause try long women many
+

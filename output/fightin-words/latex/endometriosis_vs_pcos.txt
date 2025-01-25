@@ -1,0 +1,31 @@
+\begin{tabular}{lrlr}
+\toprule
+         Word &  z-score &       Word &  z-score \\
+\midrule
+         pain &   156.76 &       pcos &   -75.00 \\
+         endo &   105.61 &     weight &   -58.85 \\
+      surgery &    86.37 &       hair &   -49.72 \\
+endometriosis &    79.02 &       diet &   -36.18 \\
+       pelvic &    44.59 &       acne &   -35.22 \\
+        cramp &    40.60 &       loss &   -32.63 \\
+      painful &    39.11 &       lose &   -30.42 \\
+          sex &    38.44 &        low &   -28.93 \\
+         they &    38.26 &      level &   -28.68 \\
+        bowel &    38.19 &       high &   -28.64 \\
+          lap &    37.83 &     eating &   -28.52 \\
+  laparoscopy &    37.04 &        eat &   -27.88 \\
+       during &    36.36 &     taking &   -26.90 \\
+           he &    35.40 &      sugar &   -25.51 \\
+       uterus &    34.90 &       skin &   -25.37 \\
+ hysterectomy &    32.65 &       test &   -24.09 \\
+   specialist &    32.37 &       lost &   -23.97 \\
+      bladder &    30.94 &       gain &   -23.64 \\
+      surgeon &    30.94 &       body &   -23.43 \\
+         hurt &    30.74 &       face &   -23.35 \\
+      removed &    29.48 & supplement &   -23.13 \\
+        stage &    28.97 &  irregular &   -22.73 \\
+        flare &    28.68 &      blood &   -22.59 \\
+          had &    28.51 &    hormone &   -22.13 \\
+     hospital &    28.21 &  metformin &   -22.01 \\
+\bottomrule
+\end{tabular}
