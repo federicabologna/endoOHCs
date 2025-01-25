@@ -1,0 +1,10 @@
+diagnostic lap
+diagnostic laparoscopy
+endo excision
+endo lap
+excision endo
+excision surgery
+first lap
+first laparoscopy
+laparoscopic surgery
+surgery excision
