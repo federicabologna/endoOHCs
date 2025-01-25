@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 import numpy as np
 import Levenshtein
@@ -20,36 +21,56 @@ def find_duplicates(df):  # function to find duplicated posts in the data
     map_dict = {}  # dict of authors' posts
     dup = []  # list of duplicates' indexes for removal from dataframe
     for index, row in df.iterrows():  # iterate over posts
-        if 'post' in row['id']:
-            author = row['author']
-            post = row['text']
+        author = row['author']
+        post = row['selftext']
 
-            # if author info is available we compare each post with previous ones by the same author
-            # we compare/calculate the similarity between the posts using the Levenshtein distance
-            if author != '[deleted]':
-                if author in map_dict.keys():
-                    flag = 0
-                    idx = 0
-                    while idx < len(map_dict[author]) and flag == 0:
-                        lev = Levenshtein.ratio(post, map_dict[author][idx])
-                        if lev > 0.99:
-                            dup.append(index)
-                            flag = 1
-                        idx += 1
-                    if flag == 0:
-                        map_dict[author].append(post)
-                else:
-                    map_dict[author] = [post]
-
-            # if author info is not available we compare each post with the preceding one chronologically
+        # if author info is available we compare each post with previous ones by the same author
+        # we compare/calculate the similarity between the posts using the Levenshtein distance
+        if author != '[deleted]':
+            if author in map_dict.keys():
+                flag = 0
+                idx = 0
+                while idx < len(map_dict[author]) and flag == 0:
+                    lev = Levenshtein.ratio(post, map_dict[author][idx])
+                    if lev > 0.99:
+                        dup.append(index)
+                        flag = 1
+                    idx += 1
+                if flag == 0:
+                    map_dict[author].append(post)
             else:
-                lev = Levenshtein.ratio(row['text'], prev_post)
-                if lev > 0.99:
-                    dup.append(index)
+                map_dict[author] = [post]
 
-            prev_post = post
+        # if author info is not available we compare each post with the preceding one chronologically
+        else:
+            lev = Levenshtein.ratio(row['selftext'], prev_post)
+            if lev > 0.99:
+                dup.append(index)
+
+        prev_post = post
 
     return dup
+
+
+def split_paragraphs(df):
+
+    paragraphs = []
+    for index, row in df.iterrows():  # iterate over posts
+        par_n = 0
+        for paragraph in row['selftext'].split('\n\n'):  # split post in paragraphs
+            if len(paragraph.split(' ')) > 5:  # keep paragraphs that are longer than 5 words
+                par_id = f"{row['concat_id']}_{par_n}"  # create new id from post id
+                par_d = {'id': par_id,  # dict with paragraph' info
+                         'text': paragraph,
+                         'date': row['time'].split(' ')[0],
+                         'yy': row['yy'],
+                         'url': row['url']}
+                paragraphs.append(par_d)
+                par_n += 1  # paragraphs counter
+
+    par_df = pd.DataFrame(paragraphs)  # transform dict into dataframe
+
+    return par_df
 
 
 def sampling(df, size):
@@ -75,21 +96,16 @@ def sampling(df, size):
     return samp
 
 
-def main():
+def main(subreddit, level, sample_size, label):
 
-    # SETTINGS
-    subreddit = 'endo+endometriosis'
-    level = 'parags'  #posts, sentences
-    sample_size = 5000
-    label = 'negligence'
-    annotated_path = os.path.join('labeling', 'annotated-data', f'combined_negligence.csv')
+    annotated_path = os.path.join('labeling', 'annotated-data', f'{label}.csv')
 
     reddit_df = pd.read_csv(os.path.join('data', f'{subreddit}.csv'), index_col=0)  # og data
     print(f'Number of posts and comments: {len(reddit_df)}')
 
     dupes = find_duplicates(reddit_df)  # find duplicates
     reddit_df.drop(dupes, inplace=True)  # removing duplicates
-    print(f'Number of duplicates: {len(dupes)}')
+    print(f'Number of duplicates: {len(dupes)}, Number of posts after removing duplicates: {len(reddit_df)}')
 
     if level == 'posts':  # if sampling at the post level, we use the same dataset
         df = reddit_df
@@ -99,8 +115,8 @@ def main():
         par_reddit_df = split_paragraphs(reddit_df)  # we split the og dataset into a parags dataset
         print(f'Number of paragraphs: {len(par_reddit_df)}')
         df = par_reddit_df
-
-        #annotated = find_annotated(annotated_path, 'id', df)
+        df.to_csv(os.path.join('data', 'endo+endometriosis_parags.csv'))
+        annotated = find_annotated(annotated_path, 'id', df)
 
     df.drop(annotated, inplace=True)  # removing already annotated docs
     print(f'Number of annotated: {len(annotated)}, Number of posts after removing annotated: {len(df)}')
@@ -116,4 +132,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # SETTINGS
+    _subreddit = 'endo+endometriosis'
+    _level = 'parags'  #posts, sentences
+    _sample_size = 5000
+    _label = 'negligence'
+    main(_subreddit, _level, _sample_size, _label)
